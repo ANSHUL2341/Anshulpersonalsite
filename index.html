@@ -2,44 +2,54 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>DIGITAL CLOCK</title>
-        <link rel="stylesheet" href="css/styles.css"> 
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
     </head>
     <body>
-        <div class="container">
-            <div class="clock">
-                <div class="circle" id="sc" style ="--clr: #04fc43;"><i></i></div>
-                <div class="circle circle2" id="mn" style ="--clr: #fee800;"><i></i></div>
-                <div class="circle circle3" id="hr" style ="--clr: #ff2972;"><i></i></div>
-                <span style="--i:1;"><b>1</b></span>
-                <span style="--i:2;"><b>2</b></span>
-                <span style="--i:3;"><b>3</b></span>
-                <span style="--i:4;"><b>4</b></span>
-                <span style="--i:5;"><b>5</b></span>
-                <span style="--i:6;"><b>6</b></span>
-                <span style="--i:7;"><b>7</b></span>
-                <span style="--i:8;"><b>8</b></span>
-                <span style="--i:9;"><b>9</b></span>
-                <span style="--i:10;"><b>10</b></span>
-                <span style="--i:11;"><b>11</b></span>
-                <span style="--i:12;"><b>12</b></span>
+        <div class="top-container">
+            
+            <h1 class="heading">I am Anshul</h1>
+            <p>A<samp><span class ="pro">Web</samp>Designer</p>
+            <img class="cloud" src="images/cloud (2).jpg" alt="cloud-picture">
+            <img class="cloud4" src="images/cloud (2).jpg" alt="cloud-picture">
+        </div>
+        
+        <div class="middle-container">
+            <div class="profile">
+            <img src="images/anshul.jpg" alt="anshulphoto">
+            <h2>HEY!</h2>
+            <P class="intro">I am web developer and designer.I am the founder and CEO of Anshul Designers.I ❤ Tea and Playing cricket</P>
              </div>
-        <script>
-            let hr = document.querySelector('#hr');
-            let mn = document.querySelector('#mn');
-            let sc = document.querySelector('#sc');
+            <hr>
+            <div class="skills">
+            <h2>MY SKILLS</h2>
+            <div class="skill-row">
+            <img  class="design" src="images/design.jfif" alt="design-development">
+            <H3>Design and Development</H3>
+            <p>I started learning code when i was in my first sem of engineering beacuse i wanted to make my own website also wanted to design the websites for others and now i am trying my level best to gaining more experince in that and wanted to do more work</p>
+            </div>
+            </div>
+            <div class="skill-row">
+            <img  class="fast-food" src="images/fastfood1.jfif" alt="fast-food">
+            <h3>Fast Food Challenge</h3>
+            <p>But my best skill is actually in eating fast food. I am a big foody person.I have completed lot of food challenge. Pizza,Burger and golgappe are favourite fast food items</p>
+            </div>
+            <hr>
+            <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>If you love fastfood as much as I do? </h3>
+            <p class="contact-message">Love fastfood as much as i do? lets talk's about how awesome they are! we can code while we eat fast food</p>
+            <a class="btn" href="mailto:thakurlucky2341@gmai.com">message me</a>
+            </div>
+         </div>
+         
+        <div class="bottom-container">
+            <a class="footer-link" href="https://www.instagram.com/_anshuthakur_/">Instagram</a>
+            <a class="footer-link"href="https://twitter.com/Anshul2341">Twitter</a>
+            <a class="footer-link"href="https://www.linkedin.com/in/anshul-thakur-4b89a7192/">Linkedin</a>
+            <p class="copyright">2019 Anshul Thakur @ Anshul Designers</p>
 
-
-            setInterval(() =>{
-            let day = new Date();
-            let hh = day.getHours() * 30;
-            let mm = day.getMinutes() * 6;
-            let ss = day.getSeconds() * 6;
-
-            hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
-            mn.style.transform = `rotateZ(${mm}deg)`;
-            sc.style.transform = `rotateZ(${ss}deg)`;
-            })
-        </script>
+        </div>
     </body>
 </html>
